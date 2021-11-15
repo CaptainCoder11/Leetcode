@@ -24,7 +24,7 @@ var rotate = function(matrix) {
     //reverse the rows 
     for(let i=0;i<rows;i++)
     {
-        var len = matrix[i].length
+        /* var len = matrix[i].length
         for(let j=0;j<rows/2;j++)
         {
             var k = rows - 1 - j  // 2 1 
@@ -32,6 +32,9 @@ var rotate = function(matrix) {
             matrix[i][j] = matrix[i][k] // 1 = 7 , 4 = 4
             matrix[i][k] = temp // 7 = 1 , 4 = 4
            
-        }
+        } 
+        */
+        //replaced by 
+        matrix[i].reverse()
     }
 };
